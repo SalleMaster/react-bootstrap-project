@@ -10774,3 +10774,28 @@ a.text-dark:hover, a.text-dark:focus {
 body {
   font-family: 'Roboto', sans-serif;
 }
+
+#main-navbar #basic-navbar-nav .nav-link.active {
+  border-left: 3px solid #444;
+}
+
+@media (max-width: 576px) {
+  #main-navbar .navbar-collapse {
+    position: absolute;
+    top: 56px;
+    left: 0;
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+    -webkit-transition: -webkit-transform 0.5s ease;
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    background: #343a40;
+    padding: 2rem;
+    height: calc(100vh - 56px);
+  }
+  #main-navbar .navbar-collapse.collapse.show {
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+  }
+}
