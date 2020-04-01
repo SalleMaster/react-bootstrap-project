@@ -10877,3 +10877,56 @@ body {
 #home .showcase .carousel .carousel-item:nth-of-type(3) {
   background-image: url("./img/image3.jpg");
 }
+
+#home .home-heading {
+  position: relative;
+  height: 200px;
+  background-image: url("./img/lights.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  color: #fff;
+}
+
+#home .video-play {
+  position: relative;
+  min-height: 212.5px;
+  color: #fff;
+  background-image: url("./img/media.jpg");
+  background-position: 0 -300px;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+#home .video-play .play-button {
+  background: none;
+  border: none;
+}
+
+#home .video-play .play-button .fa-play:hover {
+  color: #343a40;
+}
+
+#home .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+#home .gallery .col-md-4 {
+  cursor: pointer;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+  -webkit-transition: -webkit-transform 0.3s ease;
+  transition: -webkit-transform 0.3s ease;
+  transition: transform 0.3s ease;
+  transition: transform 0.3s ease, -webkit-transform 0.3s ease;
+}
+
+#home .gallery .col-md-4:hover {
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}

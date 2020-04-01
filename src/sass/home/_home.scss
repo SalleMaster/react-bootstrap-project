@@ -17,4 +17,54 @@
       }
     }
   }
+
+  .home-heading {
+    position: relative;
+    height: 200px;
+    background-image: url('./img/lights.jpg');
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    color: #fff;
+  }
+
+  .video-play {
+    position: relative;
+    min-height: 212.5px;
+    color: #fff;
+    background-image: url('./img/media.jpg');
+    background-position: 0 -300px;
+    background-size: cover;
+    background-attachment: fixed;
+
+    .play-button {
+      background: none;
+      border: none;
+
+      .fa-play:hover {
+        color: $dark;
+      }
+    }
+  }
+
+  .dark-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery {
+    .col-md-4 {
+      cursor: pointer;
+      transform: scale(0.9);
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1);
+      }
+    }
+  }
 }
