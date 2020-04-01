@@ -16,7 +16,8 @@ const MainNavbar = () => {
       id='main-navbar'
       bg='dark'
       variant='dark'
-      expand='sm'
+      expand='lg'
+      className='fixed-top'
       expanded={expanded}
     >
       <Container>
