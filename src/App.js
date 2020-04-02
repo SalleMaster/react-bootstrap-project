@@ -4,7 +4,7 @@ import './App.css';
 
 // Components
 import MainNavbar from './components/layout/MainNavbar';
-import Newsletter from './components/layout/Newsletter';
+// import Newsletter from './components/layout/Newsletter';
 import Footer from './components/layout/Footer';
 import Routes from './components/routing/Routes';
 
@@ -16,7 +16,7 @@ function App() {
         <Switch>
           <Route component={Routes} />
         </Switch>
-        <Newsletter />
+        {/* <Newsletter /> */}
         <Footer />
       </Fragment>
     </Router>

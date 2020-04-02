@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
 import Carousel from 'react-bootstrap/Carousel';
 import Container from 'react-bootstrap/Container';
@@ -6,11 +6,16 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import Button from 'react-bootstrap/Button';
 import Modal from 'react-bootstrap/Modal';
+import Form from 'react-bootstrap/Form';
 
 // Images
 import Laptop from '../../img/laptop.png';
 
 const Home = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
+
   // Video Modal Controls
   const [show, setShow] = useState(false);
 
@@ -226,6 +231,44 @@ const Home = () => {
                 alt=''
                 onClick={e => handleGalleryShow(e)}
               />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      {/* Newsletter */}
+      <section className='newsletter text-center p-5 bg-dark text-white'>
+        <Container>
+          <Row>
+            <Col>
+              <h1>Sign Up For Our Newsletter</h1>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                Provident inventore quam mollitia minima, distinctio dolorum
+                eveniet obcaecati animi reiciendis. Obcaecati assumenda
+                similique atque quam voluptatibus nostrum totam quos officia
+                alias.
+              </p>
+              <Form className='form-inline justify-content-center align-items-baseline'>
+                <Form.Group controlId='formBasicEmail'>
+                  <Form.Control
+                    className='mb-2 mr-2'
+                    type='text'
+                    placeholder='Enter Name'
+                  />
+                </Form.Group>
+                <Form.Group controlId='formBasicEmail'>
+                  <Form.Control
+                    className='mb-2 mr-2'
+                    type='email'
+                    placeholder='Enter Email'
+                  />
+                </Form.Group>
+
+                <Button variant='primary' type='submit'>
+                  Submit
+                </Button>
+              </Form>
             </Col>
           </Row>
         </Container>
