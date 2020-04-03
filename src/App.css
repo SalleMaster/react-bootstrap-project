@@ -10959,3 +10959,23 @@ body {
   color: #fff;
   text-decoration: none;
 }
+
+#blog .page-header {
+  height: 200px;
+  background-image: url("./img/image1.jpg");
+  background-attachment: fixed;
+  background-position: 0 -360px;
+  color: #fff;
+  border-bottom: 1px solid #eee;
+  padding-top: 50px;
+}
+
+#contact .page-header {
+  height: 200px;
+  background-image: url("./img/image1.jpg");
+  background-position: 0 -360px;
+  background-attachment: fixed;
+  color: #fff;
+  border-bottom: 1px solid #eee;
+  padding-top: 50px;
+}
